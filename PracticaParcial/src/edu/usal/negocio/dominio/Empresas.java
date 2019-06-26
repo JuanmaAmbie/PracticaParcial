@@ -131,8 +131,8 @@ public class Empresas implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Nombre: "+ this.nombre +
-				"\n id: " + this.id+ 
+		return 
+				 "id: " + this.id+ "\n Nombre: "+ this.nombre +
 				"\nRazón Social: "+this.RazonSocial+ 
 				"\nCuit: "+ this.cuit+
 				"\nFecha inciio: "+this.fechainicio+

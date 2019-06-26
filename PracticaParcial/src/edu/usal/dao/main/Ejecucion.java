@@ -26,12 +26,12 @@ public class Ejecucion {
 			e1.setNombre("Cambiadosfdgh");
 			impDAO.AgregarEmpresa(e1);
 			impDAO.AgregarEmpresa(e2);
-			List<Empresas> listadoempresa=impDAO.GetAll();
+			List<Empresas> lista=impDAO.GetAll();
 			
-			for(Empresas empresa: listadoempresa) {
+			for(Empresas empresa: lista) {
 				System.out.println(empresa.toString());
 			}
-			System.out.println(impDAO.EliminarEmpresa("15"));
+			System.out.println(impDAO.EliminarEmpresa("12"));
 			
 		}catch(IOException e) {
 			e.printStackTrace();

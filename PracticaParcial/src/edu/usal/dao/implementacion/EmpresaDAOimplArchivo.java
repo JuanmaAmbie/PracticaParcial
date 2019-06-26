@@ -36,7 +36,7 @@ public class EmpresaDAOimplArchivo  implements EmpresasDAO{
 
 	private String SaveEmpresa(Empresas empresa) {
 		// TODO Auto-generated method stub
-		return empresa.getNombre()+ "|" +empresa.getid() + "|" + empresa.getRazonSocial()+ "|" + empresa.getCuit()+ "|" +empresa.getDireccion()+ "|" +empresa.getLocalidad()+empresa.getCodigopostal()+ "|" +empresa.getTelefono()+ "|" +empresa.getActividad()+"\n";
+		return empresa.getid()+ "|" + empresa.getNombre()+ "|" + empresa.getRazonSocial()+ "|" + empresa.getCuit()+ "|" +empresa.getDireccion()+ "|" +empresa.getLocalidad()+empresa.getCodigopostal()+ "|" +empresa.getTelefono()+ "|" +empresa.getActividad()+"\n";
 	}
 	@Override
 	public boolean EliminarEmpresa(String id) throws IOException {
@@ -120,10 +120,10 @@ public class EmpresaDAOimplArchivo  implements EmpresasDAO{
 		empresa.setDireccion(atributos[3]);
 		empresa.setLocalidad(atributos[4]);
 		//empresa.setFechainicio(atributos[5]);
-		int Codigopostal= Integer.parseInt(atributos[6]);
-		int Telefono= Integer.parseInt(atributos[7]);
+		int Codigopostal= Integer.parseInt(atributos[5]);
+		int Telefono= Integer.parseInt(atributos[6]);
 		
-		empresa.setActividad(atributos[8]);
+		empresa.setActividad(atributos[7]);
 		
 		return empresa;
 		
